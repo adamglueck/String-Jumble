@@ -1,7 +1,7 @@
 """
 stringjumble.py
 Author: <your name>
-Credit: <sources>
+Credit: 
 
 Assignment:
 
@@ -30,5 +30,4 @@ count=len(text)
 words=list(text)
 backwords=[]
 for i in range (1,(count+1)):
-    backwords.append(-i)
-print(backwords)
+    backwords.append(words[-i])

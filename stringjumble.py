@@ -31,3 +31,4 @@ words=list(text)
 backwords=[]
 for i in range (1,(count+1)):
     backwords.append(words[-i])
+print(backwords)

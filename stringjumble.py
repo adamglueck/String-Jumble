@@ -31,4 +31,7 @@ words=list(text)
 backwords=[]
 for i in range (1,(count+1)):
     backwords.append(words[-i])
-print(backwords)
+a=""
+for i in range (1,count):
+    a=a+str(backwords[i])
+print(a)

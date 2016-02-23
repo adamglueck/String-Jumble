@@ -44,7 +44,8 @@ for i in range (1,count):
         spacecounter=spacecounter+1
 backwurds=""
 print(spaces)
-for i in range (1,spacecounter):
-    for l in range (1,spaces[i]):
+for i in range (1,spacecounter,-1):
+    for l in range (spaces[i]+1,spaces[i+1]-1):
         backwurds=backwurds+backwords[l]
 print(backwurds)
+"""store a string as a list of words"""

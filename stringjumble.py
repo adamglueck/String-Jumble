@@ -36,3 +36,15 @@ a=""
 for i in range (0,count):
     a=a+str(backwords[i])
 print(a)
+spaces=[]
+spacecounter=0
+for i in range (1,count):
+    if backwords [i]==" ":
+        spaces.append(i+1)
+        spacecounter=spacecounter+1
+backwurds=""
+print(spaces)
+for i in range (1,spacecounter):
+    for l in range (1,spaces[i]):
+        backwurds=backwurds+backwords[l]
+print(backwurds)

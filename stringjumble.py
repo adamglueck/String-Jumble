@@ -28,10 +28,11 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 text=input("Please enter a string of text (the bigger the better): ")
 count=len(text)
 words=list(text)
+print("You entered '"+text+"'.  Now jumble it:")
 backwords=[]
 for i in range (1,(count+1)):
     backwords.append(words[-i])
 a=""
-for i in range (1,count):
+for i in range (0,count):
     a=a+str(backwords[i])
 print(a)

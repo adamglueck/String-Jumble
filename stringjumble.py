@@ -32,14 +32,22 @@ for i in range (0,count):
 print(a)
 spaces=[]
 spacecounter=0
-for i in range (1,count):
-    if backwords [i]==" ":
+for i in range (0,count):
+    if words [i]==" ":
         spaces.append(i+1)
         spacecounter=spacecounter+1
+woord=""
+spaces.append(count)
+for i in range (0,spacecounter):
+    for l in range (spaces[i],spaces[i+1]):
+        woord=words[l]+woord
+print(woord)
+"""
 backwurds=""
 print(spaces)
 for i in range (1,spacecounter,-1):
     for l in range (spaces[i]+1,spaces[i+1]-1):
         backwurds=backwurds+backwords[l]
 print(backwurds)
+"""
 """store a string as a list of words"""

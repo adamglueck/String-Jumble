@@ -42,10 +42,13 @@ for i in range (1,count):
     if backwords [i]==" ":
         spaces.append(i+1)
         spacecounter=spacecounter+1
+list=[]
 backwurds=""
 print(spaces)
 for i in range (1,spacecounter,-1):
-    for l in range (spaces[i]+1,spaces[i+1]-1):
-        backwurds=backwurds+backwords[l]
+    for l in range (spaces[i],spaces[i]):
+        backwurds=backwords[l]+backwurds
+        list.append(backwurds)
+
 print(backwurds)
 """store a string as a list of words"""

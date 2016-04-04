@@ -1,7 +1,7 @@
 """
 stringjumble.py
-Author: <your name>
-Credit: 
+Author: Adam Glueck
+Credit: stack overflow, Glen Passow for .split help
 Assignment:
 The purpose of this challenge is to gain proficiency with 
 manipulating lists.
@@ -19,35 +19,13 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
-text=input("Please enter a string of text (the bigger the better): ")
-count=len(text)
-words=list(text)
-print("You entered '"+text+"'.  Now jumble it:")
-backwords=[]
-for i in range (1,(count+1)):
-    backwords.append(words[-i])
-a=""
-for i in range (0,count):
-    a=a+str(backwords[i])
-print(a)
-spaces=[]
-spacecounter=0
-for i in range (0,count):
-    if words [i]==" ":
-        spaces.append(i+1)
-        spacecounter=spacecounter+1
-woord=""
-spaces.append(count)
-for i in range (0,spacecounter):
-    for l in range (spaces[i],spaces[i+1]):
-        woord=words[l]+woord
-print(woord)
-"""
-backwurds=""
-print(spaces)
-for i in range (1,spacecounter,-1):
-    for l in range (spaces[i]+1,spaces[i+1]-1):
-        backwurds=backwurds+backwords[l]
+string = str(input("Please enter a string of text (the bigger the better): "))
+print("You entered \"{0}\". Now jumble it:".format(string))
+backwords = string[::-1]
+print(backwords)
+backwurds = string.split(' ')[::-1]
+backwurds = " ".join(str(i) for i in backwurds)
 print(backwurds)
-"""
-"""store a string as a list of words"""
+backwards = backwords.split(' ')[::-1]
+backwards = " ".join(str(i) for i in backwards)
+print(backwards)
